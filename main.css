@@ -1,0 +1,29 @@
+.btn {
+  border: 0;
+  outline: none; /* to remove any border while clicking */
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.btn--edit {
+  color: green;
+}
+
+.btn--delete {
+  color: red;
+}
+
+.info {
+  margin: 1rem 0; /* top-bottom, right-left */
+  padding: 1rem;
+  border-radius: 4px;
+  color: black;
+}
+
+.info--success {
+  border: 1px solid green;
+}
+
+.info--error {
+  border: 1px solid red;
+}

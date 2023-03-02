@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="getskeleton/normalize.css" />
+    <link rel="stylesheet" href="getskeleton/skeleton.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- First Static, Later Dynamic -->
+    <div class="container">
+      <h1>Contacts Application</h1>
+
+      <!-- .info.info--success -->
+      <div class="info info--success">Successful</div>
+      <div class="info info--error">An Error Occurred</div>
+
+      <form id="form-contacts">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" id="name" class="u-full-width" />
+        </div>
+
+        <div>
+          <label for="surname">Surname: </label>
+          <input type="text" id="surname" class="u-full-width" />
+        </div>
+
+        <div>
+          <label for="email">Email: </label>
+          <input type="text" id="email" class="u-full-width" />
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            value="Save"
+            class="button-primary u-full-width"
+          />
+        </div>
+      </form>
+
+      <hr />
+
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Process</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>İbrahim</td>
+            <td>Uslu</td>
+            <td>ibrahimuslu.business.com</td>
+            <td>
+              <button class="btn btn--edit">
+                <i class="far fa-edit"></i>
+              </button>
+              <button class="btn btn--delete">
+                <i class="far fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
