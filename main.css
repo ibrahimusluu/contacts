@@ -18,12 +18,21 @@
   padding: 1rem;
   border-radius: 4px;
   color: black;
+  /* visibility: hidden; still on DOM but invisible, display: none removes totally */
+  opacity: 0; /* we can use 0 or 1 in opacity */
+  transition: 1s ease-in-out;
 }
 
 .info--success {
   border: 1px solid green;
+  opacity: 1;
 }
 
 .info--error {
   border: 1px solid red;
+  opacity: 1;
+}
+
+.far {
+  pointer-events: none; /* to select button which is parent element of icons, not to select icons but their buttons */
 }
